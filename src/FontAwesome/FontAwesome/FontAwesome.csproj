@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>VijayAnand.FontAwesome</PackageId>
+		<Authors>Vijay Anand E G</Authors>
+		<Product>FontAwesome Icon Fonts (free version)</Product>
+		<Description>FontAwesome (free version) icon fonts glyphs to consume in a .NET application.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
+		<RepositoryType>GitHub</RepositoryType>
+		<PackageTags>.NET,Utility</PackageTags>
+	</PropertyGroup>
+</Project>
