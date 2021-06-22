@@ -12,5 +12,7 @@
 		<RepositoryType>GitHub</RepositoryType>
 		<PackageTags>.NET,Utility</PackageTags>
 		<PackageReleaseNotes>FontAwesome (free version) icon font glyphs to consume in a .NET application.</PackageReleaseNotes>
+		<AssemblyName>VijayAnand.FontAwesome</AssemblyName>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 </Project>
