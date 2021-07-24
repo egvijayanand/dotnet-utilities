@@ -1,0 +1,1 @@
+Strongly named assembly with proper version

@@ -9,10 +9,12 @@
 		<Description>FontAwesome (free version) icon font glyphs to consume in a .NET application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
-		<RepositoryType>GitHub</RepositoryType>
-		<PackageTags>.NET,Utility</PackageTags>
-		<PackageReleaseNotes>FontAwesome (free version) icon font glyphs to consume in a .NET application.</PackageReleaseNotes>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>.NET,Utility,Font Icon,Icon Font,Font Awesome</PackageTags>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 		<AssemblyName>VijayAnand.FontAwesome</AssemblyName>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.2.0</FileVersion>
 	</PropertyGroup>
 </Project>
