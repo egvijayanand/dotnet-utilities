@@ -1,1 +1,3 @@
-Strongly named assembly with proper version
+What's new in ver. 1.0.4:
+
+Compiled with .NET 6 RC1
