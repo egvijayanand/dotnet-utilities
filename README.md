@@ -2,7 +2,7 @@
 
 Useful .NET Utilities, published as NuGet package(s), that helps in reducing repetitive tasks.
 
-For now, FontAwesome (free version and Google Material Design icon font glyphs as a NuGet package to refer in any .NET application.
+For now, FontAwesome (free version) and Google Material Design icon font glyphs as a NuGet package to refer in any .NET application.
 
 |Version|Icon Font|
 |:---:|:---:|
