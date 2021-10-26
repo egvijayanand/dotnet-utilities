@@ -20,6 +20,7 @@
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.5.0</FileVersion>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
+		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="overview.md" Pack="true" PackagePath="\" />

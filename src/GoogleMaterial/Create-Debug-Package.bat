@@ -10,10 +10,10 @@ if "%packageVersion%"=="" (echo Version # not configured && goto end)
 echo Version #: %packageVersion%
 
 echo Deleting existing package
-if exist .\FontAwesome\bin\Release\VijayAnand.FontAwesome.%packageVersion%.nupkg del .\bin\Release\VijayAnand.FontAwesome.%packageVersion%.nupkg
+if exist .\GoogleMaterial\bin\Debug\VijayAnand.GoogleMaterial.%packageVersion%.nupkg del .\bin\Debug\VijayAnand.GoogleMaterial.%packageVersion%.nupkg
 
 echo Creating NuGet package ...
-dotnet build .\FontAwesome\FontAwesome.csproj -c Release -p:PackageVersion=%packageVersion%
+dotnet build .\GoogleMaterial\GoogleMaterial.csproj -c Debug -p:PackageVersion=%packageVersion%
 echo Process completed.
 
 :end
