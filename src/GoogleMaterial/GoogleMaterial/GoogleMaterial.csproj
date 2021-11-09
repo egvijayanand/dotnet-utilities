@@ -17,11 +17,11 @@
 		<PackageTags>.NET,Utility,Font;Icon,Icon;Font,Google;Material</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 		<AssemblyName>VijayAnand.GoogleMaterial</AssemblyName>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>E:\Docs\Work\Confidential\vijayanand.snk</AssemblyOriginatorKeyFile>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.1.0</FileVersion>
+		<FileVersion>1.0.2.0</FileVersion>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
 		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
 	</PropertyGroup>
