@@ -4,24 +4,24 @@
 		<TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>VijayAnand.Helpers</RootNamespace>
+		<RootNamespace>VijayAnand.Toolkit</RootNamespace>
 		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 	<!-- NuGet Package Info -->
 	<PropertyGroup>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>VijayAnand.Helpers</PackageId>
+		<PackageId>VijayAnand.Toolkit</PackageId>
 		<Authors>Vijay Anand E G</Authors>
 		<Copyright>Copyright (c) 2022 Vijay Anand E G</Copyright>
-		<Product>VijayAnand.Helpers is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse</Product>
-		<Title>VijayAnand.Helpers</Title>
-		<Description>VijayAnand.Helpers is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse</Description>
+		<Product>VijayAnand.Toolkit is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse.</Product>
+		<Title>VijayAnand.Toolkit</Title>
+		<Description>VijayAnand.Toolkit is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>.NET,C#,Utility,Helpers,Constants</PackageTags>
+		<PackageTags>.NET,C#,Utility,Helpers,Constants,Extensions,Toolkit</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
-		<AssemblyName>VijayAnand.Helpers</AssemblyName>
+		<AssemblyName>VijayAnand.Toolkit</AssemblyName>
 		<Version>1.0.0</Version>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
