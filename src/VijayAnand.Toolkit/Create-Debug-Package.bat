@@ -10,10 +10,10 @@ if "%packageVersion%"=="" (echo Version # not configured && goto end)
 @echo Version #: %packageVersion%
 
 @echo Delete existing package
-if exist .\VijayAnand.Helpers\bin\Debug\VijayAnand.Helpers.%packageVersion%.nupkg del .\VijayAnand.Helpers\bin\Debug\VijayAnand.Helpers.%packageVersion%.nupkg
+if exist .\VijayAnand.Toolkit\bin\Debug\VijayAnand.Toolkit.%packageVersion%.nupkg del .\VijayAnand.Toolkit\bin\Debug\VijayAnand.Toolkit.%packageVersion%.nupkg
 
 echo Creating NuGet package ...
-dotnet build .\VijayAnand.Helpers\VijayAnand.Helpers.csproj -c Debug -p:PackageVersion=%packageVersion%
+dotnet build .\VijayAnand.Toolkit\VijayAnand.Toolkit.csproj -c Debug -p:PackageVersion=%packageVersion%
 echo Process completed.
 
 :end

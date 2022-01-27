@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VijayAnand.Helpers", "VijayAnand.Helpers\VijayAnand.Helpers.csproj", "{8B7E1119-7CBE-4D4E-AC06-21115914FE27}"
+Project("{2D426241-A605-4987-A81B-5685E6DD5596}") = "VijayAnand.Toolkit", "VijayAnand.Toolkit\VijayAnand.Toolkit.csproj", "{A73E6894-D4AA-4F5E-B3F1-A8D3015C6E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B7E1119-7CBE-4D4E-AC06-21115914FE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B7E1119-7CBE-4D4E-AC06-21115914FE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B7E1119-7CBE-4D4E-AC06-21115914FE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B7E1119-7CBE-4D4E-AC06-21115914FE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73E6894-D4AA-4F5E-B3F1-A8D3015C6E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73E6894-D4AA-4F5E-B3F1-A8D3015C6E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73E6894-D4AA-4F5E-B3F1-A8D3015C6E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73E6894-D4AA-4F5E-B3F1-A8D3015C6E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

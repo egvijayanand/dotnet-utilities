@@ -1,0 +1,3 @@
+What's new in ver. 1.0.0:
+
+Initial release with ASCII character set represented as constants with meaningful names including its frequently used aliases.

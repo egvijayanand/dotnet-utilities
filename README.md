@@ -10,7 +10,7 @@ And frequently used constants, extensions and methods now put together as one Nu
 |:---:|:---:|
 |[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.FontAwesome/)](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|[FontAwesome](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|
 |[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.GoogleMaterial/)](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|[Google Material](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|
-|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Helpers/)](https://www.nuget.org/packages/VijayAnand.Helpers/)|[VijayAnand Helpers](https://www.nuget.org/packages/VijayAnand.Helpers/)|
+|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Toolkit/)](https://www.nuget.org/packages/VijayAnand.Toolkit/)|[VijayAnand Toolkit](https://www.nuget.org/packages/VijayAnand.Toolkit/)|
 
 #### Namespace referenced:
 
@@ -24,14 +24,14 @@ Solid - `FontAwesome.Solid`
 
 In both the packages, class under each of the above namespace is named as `IconFont`
 
-`VijayAnand.Helpers` Package
+`VijayAnand.Toolkit` Package
 
-And the class is named as `Constants`, a static class with another nested static class as `Ascii`
+And the class is named as `Constants`, a static class with another nested static class named as `Ascii`
 
-Within which all are `char` constants to refer the (visible) ASCII characters with proper names, covered with frequently used alias names too
+Within which all are `char` constants to refer the ASCII character set with meaningful names, covered with frequently used alias names too
 
 Can be referenced with single static using statement as:
 
-```CSharp
-using static VijayAnand.Helpers.Constants.Ascii;
+```CS
+using static VijayAnand.Toolkit.Constants.Ascii;
 ```
