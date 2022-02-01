@@ -6,13 +6,15 @@ For now, FontAwesome (free version) and Google Material Design icon font glyphs 
 
 And frequently used constants, extensions and methods now put together as one NuGet package so that no more code duplication and better reuse.
 
-|Version|Icon Font|
+|Package Name|Version|
 |:---:|:---:|
-|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.FontAwesome/)](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|[FontAwesome](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|
-|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.GoogleMaterial/)](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|[Google Material](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|
-|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Toolkit/)](https://www.nuget.org/packages/VijayAnand.Toolkit/)|[VijayAnand Toolkit](https://www.nuget.org/packages/VijayAnand.Toolkit/)|
+|[VijayAnand.FontAwesome](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.FontAwesome/)](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|
+|[VijayAnand.GoogleMaterial](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.GoogleMaterial/)](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|
+|[VijayAnand.Toolkit](https://www.nuget.org/packages/VijayAnand.Toolkit/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Toolkit/)](https://www.nuget.org/packages/VijayAnand.Toolkit/)|
 
-#### Namespace referenced:
+### Package Details:
+
+#### VijayAnand.FontAwesome Package:
 
 Brands - `FontAwesome.Brands`
 
@@ -20,11 +22,13 @@ Regular - `FontAwesome.Regular`
 
 Solid - `FontAwesome.Solid`
 
-`Google.Material`
+#### VijayAnand.GoogleMaterial Package:
 
-In both the packages, class under each of the above namespace is named as `IconFont`
+Material - `Google.Material`
 
-`VijayAnand.Toolkit` Package
+In both the above packages, class under each of the namespace mentioned is titled as `IconFont`
+
+#### VijayAnand.Toolkit Package:
 
 And the class is named as `Constants`, a static class with another nested static class named as `Ascii`
 
