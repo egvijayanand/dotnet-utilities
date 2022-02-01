@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/src/VijayAnand.Toolkit/Push-Release-Package.bat
+/src/VijayAnand.Toolkit/PackageName.txt
