@@ -140,6 +140,9 @@ namespace VijayAnand.Toolkit
             /// <summary>&#45;</summary>
             public const char Minus = '\x2D';
 
+            /// <summary>&#45; See also <see cref="Minus"/></summary>
+            public const char Hyphen = '\x2D';
+
             /// <summary>&#46;</summary>
             public const char Period = '\x2E';
 

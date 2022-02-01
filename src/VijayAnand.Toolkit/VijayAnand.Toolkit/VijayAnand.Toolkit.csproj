@@ -12,7 +12,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>VijayAnand.Toolkit</PackageId>
 		<Authors>Vijay Anand E G</Authors>
-		<Copyright>Copyright (c) 2022 Vijay Anand E G</Copyright>
+		<Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
 		<Product>VijayAnand.Toolkit is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse.</Product>
 		<Title>VijayAnand.Toolkit</Title>
 		<Description>VijayAnand.Toolkit is a set of C# helper classes, methods, extensions, etc. that facilitate rapid program development by cutting down repetitive tasks and offering better reuse.</Description>
@@ -24,15 +24,28 @@
 		<AssemblyName>VijayAnand.Toolkit</AssemblyName>
 		<Version>1.0.0</Version>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
+		<FileVersion>1.0.0.1</FileVersion>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
 		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
 		<NeutralLanguage>en</NeutralLanguage>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<!-- Source Linking -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<DebugType>embedded</DebugType>
 	</PropertyGroup>
+
 	<ItemGroup>
-		<None Include="overview.md" Pack="true" PackagePath="\" />
+		<None Include="overview.md"
+			  Pack="true"
+			  PackagePath="\" />
 		<None Include="release-notes.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub"
+						  Version="1.1.1"
+						  PrivateAssets="All" />
 	</ItemGroup>
 
 </Project>
