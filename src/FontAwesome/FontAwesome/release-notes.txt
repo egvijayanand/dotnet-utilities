@@ -1,3 +1,5 @@
-What's new in ver. 1.0.6:
+What's new in ver. 1.0.7:
 
-Built on top of .NET 6 LTS release.
+Font glyphs compatible with Font Awesome 5 LTS - v5.15.4
+
+Changelog: Tripadvisor glyph (\uf262) has beem removed in this version (Brands).

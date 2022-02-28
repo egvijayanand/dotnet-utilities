@@ -1,20 +1,24 @@
 :: Creates a new NuGet package from the project file
 @echo off
 
-if not exist PackageVersion.txt (echo Version file not available && goto end)
+set config=Release
+
+if not exist PackageVersion.txt (call Error "Version file not available." & goto end)
 
 set /P packageVersion=<PackageVersion.txt
 
-if "%packageVersion%"=="" (echo Version # not configured && goto end)
+if [%packageVersion%]==[] (call Error "Version # not configured." & goto end)
 
-echo Version #: %packageVersion%
+call Info "Version #: %packageVersion%"
 
-echo Deleting existing package
-if exist .\FontAwesome\bin\Release\VijayAnand.FontAwesome.%packageVersion%.nupkg del .\bin\Release\VijayAnand.FontAwesome.%packageVersion%.nupkg
+call Info "Deleting existing package ..."
+if exist .\FontAwesome\bin\%config%\VijayAnand.FontAwesome.%packageVersion%.nupkg del .\FontAwesome\bin\%config%\VijayAnand.FontAwesome.%packageVersion%.nupkg
 
-echo Creating NuGet package ...
-dotnet build .\FontAwesome\FontAwesome.csproj -c Release -p:PackageVersion=%packageVersion%
-echo Process completed.
+call Info "Creating NuGet package ..."
+
+dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion% -p:ContinuousIntegrationBuild=true
+
+if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Package creation failed.")
 
 :end
 pause

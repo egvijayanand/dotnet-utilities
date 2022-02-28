@@ -142,7 +142,6 @@
             public static readonly string CreativeCommons = "\uf25e";
             public static readonly string Gg = "\uf260";
             public static readonly string GgCircle = "\uf261";
-            public static readonly string Tripadvisor = "\uf262";
             public static readonly string Odnoklassniki = "\uf263";
             public static readonly string OdnoklassnikiSquare = "\uf264";
             public static readonly string GetPocket = "\uf265";
