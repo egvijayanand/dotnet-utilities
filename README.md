@@ -2,7 +2,7 @@
 
 Useful .NET Utilities, published as NuGet package(s), that helps in reducing repetitive tasks.
 
-For now, FontAwesome (free version) and Google Material Design icon font glyphs as a NuGet package to refer in any .NET application.
+For now, Font Awesome (free version) and Google Material Design icon font glyphs as a NuGet package to refer in any .NET application.
 
 And frequently used constants, extensions and methods now put together as one NuGet package so that no more code duplication and better reuse.
 
@@ -15,6 +15,14 @@ And frequently used constants, extensions and methods now put together as one Nu
 ### Package Details:
 
 #### VijayAnand.FontAwesome Package:
+
+* v1 series compatible with Font Awesome 5 LTS fonts
+* v2 series compatible with Font Awesome 6 fonts
+
+Note for Font Awesome v6 glyph usage:
+
+* Number fonts have been named as Number_0, Number_1, ...
+* Letter fonts have been named as Letter_A, Letter_B, ...
 
 Brands - `FontAwesome.Brands`
 
