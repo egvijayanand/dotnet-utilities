@@ -4,7 +4,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>VijayAnand.FontAwesome</PackageId>
 		<Authors>Vijay Anand E G</Authors>
-		<Copyright>Copyright (c) 2021 Vijay Anand E G</Copyright>
+		<Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
 		<Product>FontAwesome Icon Fonts (free version)</Product>
 		<Title>FontAwesome Icon Fonts (free version)</Title>
 		<Description>FontAwesome (free version) icon font glyphs to consume in a .NET application.</Description>
@@ -14,15 +14,26 @@
 		<PackageTags>.NET,Utility,Font;Icon,Icon;Font,Font;Awesome</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 		<AssemblyName>VijayAnand.FontAwesome</AssemblyName>
-		<Version>1.0.6</Version>
-		<SignAssembly>True</SignAssembly>
-		<AssemblyOriginatorKeyFile>E:\Docs\Work\Confidential\vijayanand.snk</AssemblyOriginatorKeyFile>
+		<Version>1.0.0</Version>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.6.0</FileVersion>
+		<FileVersion>1.0.7.0</FileVersion>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
 		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+		<!-- Source Linking -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<DebugType>embedded</DebugType>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+	<ItemGroup>
 		<None Include="overview.md" Pack="true" PackagePath="\" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="release-notes.txt" />
 	</ItemGroup>
 </Project>
