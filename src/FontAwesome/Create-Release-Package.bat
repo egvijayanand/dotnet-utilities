@@ -16,7 +16,7 @@ if exist .\FontAwesome\bin\%config%\VijayAnand.FontAwesome.%packageVersion%.nupk
 
 call Info "Creating NuGet package ..."
 
-dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion%
+dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion% -p:ContinuousIntegrationBuild=true
 
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Package creation failed.")
 
