@@ -5,9 +5,9 @@
 		<PackageId>VijayAnand.FontAwesome</PackageId>
 		<Authors>Vijay Anand E G</Authors>
 		<Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
-		<Product>FontAwesome Icon Fonts (free version)</Product>
-		<Title>FontAwesome Icon Fonts (free version)</Title>
-		<Description>FontAwesome (free version) icon font glyphs to consume in a .NET application.</Description>
+		<Product>Font Awesome Icon Fonts (free version)</Product>
+		<Title>Font Awesome Icon Fonts (free version)</Title>
+		<Description>Font Awesome (free version) icon font glyphs to consume in a .NET application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
