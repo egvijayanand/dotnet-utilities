@@ -733,7 +733,9 @@ namespace FontAwesome
             public static readonly string Number_8 = "\u0038";
             public static readonly string Number_9 = "\u0039";
             public static readonly string LessThan = "\u003c";
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
             public static readonly string Equals = "\u003d";
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
             public static readonly string GreaterThan = "\u003e";
             public static readonly string Question = "\u003f";
             public static readonly string At = "\u0040";
@@ -1099,6 +1101,8 @@ namespace FontAwesome
             public static readonly string WheatAwnCircleExclamation = "\ue598";
             public static readonly string Worm = "\ue599";
             public static readonly string XmarksLines = "\ue59a";
+            public static readonly string ChildDress = "\ue59c";
+            public static readonly string ChildReaching = "\ue59d";
             public static readonly string MartiniGlassEmpty = "\uf000";
             public static readonly string Music = "\uf001";
             public static readonly string MagnifyingGlass = "\uf002";
@@ -1881,9 +1885,9 @@ namespace FontAwesome
             public static readonly string Shapes = "\uf61f";
             public static readonly string StarOfLife = "\uf621";
             public static readonly string Gauge = "\uf624";
-            public static readonly string GaugeHigh = "\uf625";
+            public static readonly string GaugeHigh = "\uf3fd";
             public static readonly string GaugeSimple = "\uf629";
-            public static readonly string GaugeSimpleHigh = "\uf62a";
+            public static readonly string GaugeSimpleHigh = "\uf0e4";
             public static readonly string Teeth = "\uf62e";
             public static readonly string TeethOpen = "\uf62f";
             public static readonly string MasksTheater = "\uf630";
