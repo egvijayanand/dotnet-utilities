@@ -78,6 +78,7 @@ namespace FontAwesome
             public static readonly string Uncharted = "\ue084";
             public static readonly string WatchmanMonitoring = "\ue087";
             public static readonly string Wodu = "\ue088";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Wirsindhandwerk = "\ue2d0";
             public static readonly string Bots = "\ue340";
             public static readonly string Cmplid = "\ue360";
@@ -575,6 +576,7 @@ namespace FontAwesome
             public static readonly string Letter_Y = "\u0059";
             public static readonly string Letter_Z = "\u005a";
             public static readonly string FolderClosed = "\ue185";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Heart = "\u2665";
             public static readonly string Star = "\u2b50";
             public static readonly string User = "\uf007";
@@ -871,6 +873,7 @@ namespace FontAwesome
             public static readonly string MillSign = "\ue1ed";
             public static readonly string MoneyBills = "\ue1f3";
             public static readonly string NairaSign = "\ue1f6";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Panorama = "\ue209";
             public static readonly string PesetaSign = "\ue221";
             public static readonly string PesoSign = "\ue222";
@@ -884,6 +887,7 @@ namespace FontAwesome
             public static readonly string WandMagicSparkles = "\ue2ca";
             public static readonly string WheatAwn = "\ue2cd";
             public static readonly string WheelchairMove = "\ue2ce";
+            public static readonly string BangladeshiTakaSign = "\ue2e6";
             public static readonly string BowlRice = "\ue2eb";
             public static readonly string PersonPregnant = "\ue31e";
             public static readonly string HouseChimney = "\ue3af";
@@ -953,7 +957,7 @@ namespace FontAwesome
             public static readonly string Burst = "\ue4dc";
             public static readonly string CarOn = "\ue4dd";
             public static readonly string CarTunnel = "\ue4de";
-            public static readonly string ChildRifle = "\ue4e0";
+            public static readonly string ChildCombatant = "\ue4e0";
             public static readonly string Children = "\ue4e1";
             public static readonly string CircleNodes = "\ue4e2";
             public static readonly string ClipboardQuestion = "\ue4e3";
