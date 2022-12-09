@@ -44,10 +44,10 @@ namespace FontAwesome
             public static readonly string FirefoxBrowser = "\ue007";
             public static readonly string Ideal = "\ue013";
             public static readonly string Microblog = "\ue01a";
-            public static readonly string PiedPiperSquare = "\ue01e";
+            public static readonly string SquarePiedPiper = "\ue01e";
             public static readonly string Unity = "\ue049";
             public static readonly string Dailymotion = "\ue052";
-            public static readonly string InstagramSquare = "\ue055";
+            public static readonly string SquareInstagram = "\ue055";
             public static readonly string Mixer = "\ue056";
             public static readonly string Shopify = "\ue057";
             public static readonly string Deezer = "\ue077";
@@ -66,6 +66,7 @@ namespace FontAwesome
             public static readonly string Uncharted = "\ue084";
             public static readonly string WatchmanMonitoring = "\ue087";
             public static readonly string Wodu = "\ue088";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Wirsindhandwerk = "\ue2d0";
             public static readonly string Bots = "\ue340";
             public static readonly string Cmplid = "\ue360";
@@ -74,20 +75,24 @@ namespace FontAwesome
             public static readonly string Pix = "\ue43a";
             public static readonly string Sitrox = "\ue44a";
             public static readonly string Hashnode = "\ue499";
+            public static readonly string Meta = "\ue49b";
             public static readonly string Padlet = "\ue4a0";
             public static readonly string NfcDirectional = "\ue530";
             public static readonly string NfcSymbol = "\ue531";
             public static readonly string Screenpal = "\ue570";
-            public static readonly string TwitterSquare = "\uf081";
-            public static readonly string FacebookSquare = "\uf082";
+            public static readonly string SpaceAwesome = "\ue5ac";
+            public static readonly string SquareFontAwesome = "\ue5ad";
+            public static readonly string SquareGitlab = "\ue5ae";
+            public static readonly string SquareTwitter = "\uf081";
+            public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
-            public static readonly string GithubSquare = "\uf092";
+            public static readonly string SquareGithub = "\uf092";
             public static readonly string Twitter = "\uf099";
             public static readonly string Facebook = "\uf09a";
             public static readonly string Github = "\uf09b";
             public static readonly string Pinterest = "\uf0d2";
-            public static readonly string PinterestSquare = "\uf0d3";
-            public static readonly string GooglePlusSquare = "\uf0d4";
+            public static readonly string SquarePinterest = "\uf0d3";
+            public static readonly string SquareGooglePlus = "\uf0d4";
             public static readonly string GooglePlusG = "\uf0d5";
             public static readonly string LinkedinIn = "\uf0e1";
             public static readonly string GithubAlt = "\uf113";
@@ -97,7 +102,7 @@ namespace FontAwesome
             public static readonly string Btc = "\uf15a";
             public static readonly string Youtube = "\uf167";
             public static readonly string Xing = "\uf168";
-            public static readonly string XingSquare = "\uf169";
+            public static readonly string SquareXing = "\uf169";
             public static readonly string Dropbox = "\uf16b";
             public static readonly string StackOverflow = "\uf16c";
             public static readonly string Instagram = "\uf16d";
@@ -105,7 +110,7 @@ namespace FontAwesome
             public static readonly string Adn = "\uf170";
             public static readonly string Bitbucket = "\uf171";
             public static readonly string Tumblr = "\uf173";
-            public static readonly string TumblrSquare = "\uf174";
+            public static readonly string SquareTumblr = "\uf174";
             public static readonly string Apple = "\uf179";
             public static readonly string Windows = "\uf17a";
             public static readonly string Android = "\uf17b";
@@ -120,14 +125,14 @@ namespace FontAwesome
             public static readonly string Renren = "\uf18b";
             public static readonly string Pagelines = "\uf18c";
             public static readonly string StackExchange = "\uf18d";
-            public static readonly string VimeoSquare = "\uf194";
+            public static readonly string SquareVimeo = "\uf194";
             public static readonly string Slack = "\uf198";
             public static readonly string Wordpress = "\uf19a";
             public static readonly string Openid = "\uf19b";
             public static readonly string Yahoo = "\uf19e";
             public static readonly string Google = "\uf1a0";
             public static readonly string Reddit = "\uf1a1";
-            public static readonly string RedditSquare = "\uf1a2";
+            public static readonly string SquareReddit = "\uf1a2";
             public static readonly string StumbleuponCircle = "\uf1a3";
             public static readonly string Stumbleupon = "\uf1a4";
             public static readonly string Delicious = "\uf1a5";
@@ -137,9 +142,9 @@ namespace FontAwesome
             public static readonly string Drupal = "\uf1a9";
             public static readonly string Joomla = "\uf1aa";
             public static readonly string Behance = "\uf1b4";
-            public static readonly string BehanceSquare = "\uf1b5";
+            public static readonly string SquareBehance = "\uf1b5";
             public static readonly string Steam = "\uf1b6";
-            public static readonly string SteamSquare = "\uf1b7";
+            public static readonly string SquareSteam = "\uf1b7";
             public static readonly string Spotify = "\uf1bc";
             public static readonly string Deviantart = "\uf1bd";
             public static readonly string Soundcloud = "\uf1be";
@@ -148,7 +153,7 @@ namespace FontAwesome
             public static readonly string Jsfiddle = "\uf1cc";
             public static readonly string Rebel = "\uf1d0";
             public static readonly string Empire = "\uf1d1";
-            public static readonly string GitSquare = "\uf1d2";
+            public static readonly string SquareGit = "\uf1d2";
             public static readonly string Git = "\uf1d3";
             public static readonly string HackerNews = "\uf1d4";
             public static readonly string TencentWeibo = "\uf1d5";
@@ -166,7 +171,7 @@ namespace FontAwesome
             public static readonly string CcPaypal = "\uf1f4";
             public static readonly string CcStripe = "\uf1f5";
             public static readonly string Lastfm = "\uf202";
-            public static readonly string LastfmSquare = "\uf203";
+            public static readonly string SquareLastfm = "\uf203";
             public static readonly string Ioxhost = "\uf208";
             public static readonly string Angellist = "\uf209";
             public static readonly string Buysellads = "\uf20d";
@@ -192,7 +197,7 @@ namespace FontAwesome
             public static readonly string Gg = "\uf260";
             public static readonly string GgCircle = "\uf261";
             public static readonly string Odnoklassniki = "\uf263";
-            public static readonly string OdnoklassnikiSquare = "\uf264";
+            public static readonly string SquareOdnoklassniki = "\uf264";
             public static readonly string GetPocket = "\uf265";
             public static readonly string WikipediaW = "\uf266";
             public static readonly string Safari = "\uf267";
@@ -225,9 +230,9 @@ namespace FontAwesome
             public static readonly string Glide = "\uf2a5";
             public static readonly string GlideG = "\uf2a6";
             public static readonly string Viadeo = "\uf2a9";
-            public static readonly string ViadeoSquare = "\uf2aa";
+            public static readonly string SquareViadeo = "\uf2aa";
             public static readonly string Snapchat = "\uf2ab";
-            public static readonly string SnapchatSquare = "\uf2ad";
+            public static readonly string SquareSnapchat = "\uf2ad";
             public static readonly string PiedPiper = "\uf2ae";
             public static readonly string FirstOrder = "\uf2b0";
             public static readonly string Yoast = "\uf2b1";
@@ -285,7 +290,7 @@ namespace FontAwesome
             public static readonly string Dochub = "\uf394";
             public static readonly string Docker = "\uf395";
             public static readonly string Draft2digital = "\uf396";
-            public static readonly string DribbbleSquare = "\uf397";
+            public static readonly string SquareDribbble = "\uf397";
             public static readonly string Dyalog = "\uf399";
             public static readonly string Earlybirds = "\uf39a";
             public static readonly string Erlang = "\uf39d";
@@ -304,7 +309,7 @@ namespace FontAwesome
             public static readonly string Gripfire = "\uf3ac";
             public static readonly string Grunt = "\uf3ad";
             public static readonly string Gulp = "\uf3ae";
-            public static readonly string HackerNewsSquare = "\uf3af";
+            public static readonly string SquareHackerNews = "\uf3af";
             public static readonly string HireAHelper = "\uf3b0";
             public static readonly string Hotjar = "\uf3b1";
             public static readonly string Hubspot = "\uf3b2";
@@ -313,7 +318,7 @@ namespace FontAwesome
             public static readonly string Jenkins = "\uf3b6";
             public static readonly string Joget = "\uf3b7";
             public static readonly string Js = "\uf3b8";
-            public static readonly string JsSquare = "\uf3b9";
+            public static readonly string SquareJs = "\uf3b9";
             public static readonly string Keycdn = "\uf3ba";
             public static readonly string Kickstarter = "\uf3bb";
             public static readonly string KickstarterK = "\uf3bc";
@@ -366,7 +371,7 @@ namespace FontAwesome
             public static readonly string Viber = "\uf409";
             public static readonly string Vimeo = "\uf40a";
             public static readonly string Vnv = "\uf40b";
-            public static readonly string WhatsappSquare = "\uf40c";
+            public static readonly string SquareWhatsapp = "\uf40c";
             public static readonly string Whmcs = "\uf40d";
             public static readonly string WordpressSimple = "\uf411";
             public static readonly string Xbox = "\uf412";
@@ -385,7 +390,6 @@ namespace FontAwesome
             public static readonly string Angular = "\uf420";
             public static readonly string Aviato = "\uf421";
             public static readonly string Ember = "\uf423";
-            public static readonly string SquareFontAwesome = "\uf425";
             public static readonly string Gitter = "\uf426";
             public static readonly string Hooli = "\uf427";
             public static readonly string Strava = "\uf428";
@@ -397,7 +401,7 @@ namespace FontAwesome
             public static readonly string Ethereum = "\uf42e";
             public static readonly string Korvue = "\uf42f";
             public static readonly string Elementor = "\uf430";
-            public static readonly string YoutubeSquare = "\uf166";
+            public static readonly string SquareYoutube = "\uf166";
             public static readonly string Flipboard = "\uf44d";
             public static readonly string Hips = "\uf452";
             public static readonly string Php = "\uf457";
@@ -548,6 +552,7 @@ namespace FontAwesome
             public static readonly string Letter_Y = "\u0059";
             public static readonly string Letter_Z = "\u005a";
             public static readonly string FolderClosed = "\ue185";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Heart = "\u2665";
             public static readonly string Star = "\u2b50";
             public static readonly string User = "\uf007";
@@ -628,6 +633,7 @@ namespace FontAwesome
             public static readonly string ObjectUngroup = "\uf248";
             public static readonly string NoteSticky = "\uf249";
             public static readonly string Clone = "\uf24d";
+            public static readonly string HourglassHalf = "\uf252";
             public static readonly string Hourglass = "\u23f3";
             public static readonly string HandBackFist = "\uf255";
             public static readonly string Hand = "\u270b";
@@ -787,7 +793,7 @@ namespace FontAwesome
             public static readonly string HouseChimneyUser = "\ue065";
             public static readonly string HouseLaptop = "\ue066";
             public static readonly string LungsVirus = "\ue067";
-            public static readonly string PeopleArrowsLeftRight = "\ue068";
+            public static readonly string PeopleArrows = "\ue068";
             public static readonly string PlaneSlash = "\ue069";
             public static readonly string PumpMedical = "\ue06a";
             public static readonly string PumpSoap = "\ue06b";
@@ -843,6 +849,7 @@ namespace FontAwesome
             public static readonly string MillSign = "\ue1ed";
             public static readonly string MoneyBills = "\ue1f3";
             public static readonly string NairaSign = "\ue1f6";
+            public static readonly string Notdef = "\ue1fe";
             public static readonly string Panorama = "\ue209";
             public static readonly string PesetaSign = "\ue221";
             public static readonly string PesoSign = "\ue222";
@@ -862,8 +869,6 @@ namespace FontAwesome
             public static readonly string HouseCrack = "\ue3b1";
             public static readonly string HouseMedical = "\ue3b2";
             public static readonly string CentSign = "\ue3f5";
-            public static readonly string PersonThroughWindow = "\ue433";
-            public static readonly string PlantWilt = "\ue43b";
             public static readonly string PlusMinus = "\ue43c";
             public static readonly string Sailboat = "\ue445";
             public static readonly string Section = "\ue447";
@@ -875,8 +880,7 @@ namespace FontAwesome
             public static readonly string DiagramSuccessor = "\ue47a";
             public static readonly string EarthOceania = "\ue47b";
             public static readonly string BugSlash = "\ue490";
-            public static readonly string FileCircleCheck = "\ue493";
-            public static readonly string FileCircleXmark = "\ue494";
+            public static readonly string FileCirclePlus = "\ue494";
             public static readonly string ShopLock = "\ue4a5";
             public static readonly string VirusCovid = "\ue4a8";
             public static readonly string VirusCovidSlash = "\ue4a9";
@@ -940,7 +944,6 @@ namespace FontAwesome
             public static readonly string Ferry = "\ue4ea";
             public static readonly string FileCircleExclamation = "\ue4eb";
             public static readonly string FileCircleMinus = "\ue4ed";
-            public static readonly string FileCirclePlus = "\ue4ee";
             public static readonly string FileCircleQuestion = "\ue4ef";
             public static readonly string FileShield = "\ue4f0";
             public static readonly string FireBurner = "\ue4f1";
@@ -1069,7 +1072,7 @@ namespace FontAwesome
             public static readonly string SquareNfi = "\ue576";
             public static readonly string SquarePersonConfined = "\ue577";
             public static readonly string SquareVirus = "\ue578";
-            public static readonly string StaffAesculapius = "\ue579";
+            public static readonly string StaffSnake = "\ue579";
             public static readonly string SunPlantWilt = "\ue57a";
             public static readonly string Tarp = "\ue57b";
             public static readonly string TarpDroplet = "\ue57c";
@@ -1103,6 +1106,12 @@ namespace FontAwesome
             public static readonly string XmarksLines = "\ue59a";
             public static readonly string ChildDress = "\ue59c";
             public static readonly string ChildReaching = "\ue59d";
+            public static readonly string FileCircleCheck = "\ue5a0";
+            public static readonly string FileCircleXmark = "\ue5a1";
+            public static readonly string PersonThroughWindow = "\ue5a9";
+            public static readonly string PlantWilt = "\ue5aa";
+            public static readonly string Stapler = "\ue5af";
+            public static readonly string TrainTram = "\ue5b4";
             public static readonly string MartiniGlassEmpty = "\uf000";
             public static readonly string Music = "\uf001";
             public static readonly string MagnifyingGlass = "\uf002";
@@ -1482,7 +1491,7 @@ namespace FontAwesome
             public static readonly string Clone = "\uf24d";
             public static readonly string ScaleBalanced = "\u2696";
             public static readonly string HourglassStart = "\uf251";
-            public static readonly string HourglassEmpty = "\uf252";
+            public static readonly string HourglassHalf = "\uf252";
             public static readonly string HourglassEnd = "\u231b";
             public static readonly string Hourglass = "\u23f3";
             public static readonly string HandBackFist = "\uf255";
@@ -2048,7 +2057,7 @@ namespace FontAwesome
             public static readonly string TengeSign = "\u20b8";
             public static readonly string Toilet = "\uf7d8";
             public static readonly string ScrewdriverWrench = "\uf7d9";
-            public static readonly string TrainTram = "\uf7da";
+            public static readonly string CableCar = "\ue0cf";
             public static readonly string FireFlameCurved = "\uf7e4";
             public static readonly string Bacon = "\uf7e5";
             public static readonly string BookMedical = "\uf7e6";
@@ -2072,6 +2081,7 @@ namespace FontAwesome
             public static readonly string PepperHot = "\uf816";
             public static readonly string PizzaSlice = "\uf818";
             public static readonly string SackDollar = "\uf81d";
+            public static readonly string BookTanakh = "\uf827";
             public static readonly string BarsProgress = "\uf828";
             public static readonly string TrashArrowUp = "\uf829";
             public static readonly string TrashCanArrowUp = "\uf82a";

@@ -25,10 +25,12 @@ call Info ".NET SDK Version"
 
 dotnet --version
 
+echo.
 call Info "Deleting existing package ..."
 
 if exist .\FontAwesome\bin\%config%\%packageName%.%packageVersion%.nupkg del .\FontAwesome\bin\%config%\%packageName%.%packageVersion%.nupkg
 
+echo.
 call Info "Creating %packageName% ver. %packageVersion% NuGet package in %config% mode ..."
 
 dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion% -p:ContinuousIntegrationBuild=true
