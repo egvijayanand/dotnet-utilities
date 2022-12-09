@@ -4,7 +4,12 @@ namespace FontAwesome
     {
         public static class IconFont
         {
+            public static readonly string Exclamation = "\u0021";
             public static readonly string Hashtag = "\u0023";
+            public static readonly string DollarSign = "\u0024";
+            public static readonly string Percent = "\u0025";
+            public static readonly string Asterisk = "\u002a";
+            public static readonly string Plus = "\u002b";
             public static readonly string Number_0 = "\u0030";
             public static readonly string Number_1 = "\u0031";
             public static readonly string Number_2 = "\u0032";
@@ -15,6 +20,13 @@ namespace FontAwesome
             public static readonly string Number_7 = "\u0037";
             public static readonly string Number_8 = "\u0038";
             public static readonly string Number_9 = "\u0039";
+            public static readonly string LessThan = "\u003c";
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+            public static readonly string Equals = "\u003d";
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+            public static readonly string GreaterThan = "\u003e";
+            public static readonly string Question = "\u003f";
+            public static readonly string At = "\u0040";
             public static readonly string Letter_A = "\u0041";
             public static readonly string Letter_B = "\u0042";
             public static readonly string Letter_C = "\u0043";
@@ -66,7 +78,6 @@ namespace FontAwesome
             public static readonly string Uncharted = "\ue084";
             public static readonly string WatchmanMonitoring = "\ue087";
             public static readonly string Wodu = "\ue088";
-            public static readonly string Notdef = "\ue1fe";
             public static readonly string Wirsindhandwerk = "\ue2d0";
             public static readonly string Bots = "\ue340";
             public static readonly string Cmplid = "\ue360";
@@ -514,7 +525,12 @@ namespace FontAwesome
     {
         public static class IconFont
         {
+            public static readonly string Exclamation = "\u0021";
             public static readonly string Hashtag = "\u0023";
+            public static readonly string DollarSign = "\u0024";
+            public static readonly string Percent = "\u0025";
+            public static readonly string Asterisk = "\u002a";
+            public static readonly string Plus = "\u002b";
             public static readonly string Number_0 = "\u0030";
             public static readonly string Number_1 = "\u0031";
             public static readonly string Number_2 = "\u0032";
@@ -525,6 +541,13 @@ namespace FontAwesome
             public static readonly string Number_7 = "\u0037";
             public static readonly string Number_8 = "\u0038";
             public static readonly string Number_9 = "\u0039";
+            public static readonly string LessThan = "\u003c";
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+            public static readonly string Equals = "\u003d";
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+            public static readonly string GreaterThan = "\u003e";
+            public static readonly string Question = "\u003f";
+            public static readonly string At = "\u0040";
             public static readonly string Letter_A = "\u0041";
             public static readonly string Letter_B = "\u0042";
             public static readonly string Letter_C = "\u0043";
@@ -552,7 +575,6 @@ namespace FontAwesome
             public static readonly string Letter_Y = "\u0059";
             public static readonly string Letter_Z = "\u005a";
             public static readonly string FolderClosed = "\ue185";
-            public static readonly string Notdef = "\ue1fe";
             public static readonly string Heart = "\u2665";
             public static readonly string Star = "\u2b50";
             public static readonly string User = "\uf007";
@@ -849,7 +871,6 @@ namespace FontAwesome
             public static readonly string MillSign = "\ue1ed";
             public static readonly string MoneyBills = "\ue1f3";
             public static readonly string NairaSign = "\ue1f6";
-            public static readonly string Notdef = "\ue1fe";
             public static readonly string Panorama = "\ue209";
             public static readonly string PesetaSign = "\ue221";
             public static readonly string PesoSign = "\ue222";
