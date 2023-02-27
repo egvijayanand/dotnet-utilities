@@ -21,6 +21,13 @@ set /P packageVersion=<PackageVersion.txt
 
 if [%packageVersion%]==[] (call Error "Version # not configured." & goto end)
 
+:: Check whether the context is git repository or not
+git rev-parse --is-inside-work-tree
+
+:: Retrieve the hash of the latest commit
+if %errorlevel% == 0 (for /F "tokens=*" %%g in ('git rev-parse --short HEAD') do (set revisionId=+sha.%%g)) else (set revisionId=)
+
+echo.
 call Info ".NET SDK Version"
 
 dotnet --version
@@ -33,8 +40,10 @@ if exist .\FontAwesome\bin\%config%\%packageName%.%packageVersion%.nupkg del .\F
 echo.
 call Info "Creating %packageName% ver. %packageVersion% NuGet package in %config% mode ..."
 
-dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion% -p:ContinuousIntegrationBuild=true
+echo.
+dotnet build .\FontAwesome\FontAwesome.csproj -c %config% -p:PackageVersion=%packageVersion%%revisionId%
 
+echo.
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Package creation failed.")
 
 :end

@@ -8,9 +8,9 @@ And frequently used constants, extensions and methods now put together as one Nu
 
 |Package Name|Version|
 |:---:|:---:|
-|[VijayAnand.FontAwesome](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|[![Font Awesome 5 LTS](https://img.shields.io/badge/nuget-v1.0.7-blue)](https://www.nuget.org/packages/VijayAnand.FontAwesome/1.0.7) [![Font Awesome 6 Latest](https://badgen.net/nuget/v/VijayAnand.FontAwesome/)](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|
-|[VijayAnand.GoogleMaterial](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.GoogleMaterial/)](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|
-|[VijayAnand.Toolkit](https://www.nuget.org/packages/VijayAnand.Toolkit/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Toolkit/)](https://www.nuget.org/packages/VijayAnand.Toolkit/)|
+|[VijayAnand.FontAwesome](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|[![Font Awesome 5 LTS](https://badgen.net/badge/nuget/v1.0.7/blue?icon=nuget)](https://www.nuget.org/packages/VijayAnand.FontAwesome/1.0.7) [![Font Awesome 6 Latest](https://badgen.net/nuget/v/VijayAnand.FontAwesome/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.FontAwesome/)|
+|[VijayAnand.GoogleMaterial](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.GoogleMaterial/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.GoogleMaterial/)|
+|[VijayAnand.Toolkit](https://www.nuget.org/packages/VijayAnand.Toolkit/)|[![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Toolkit/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Toolkit/)|
 
 ### Package Details:
 
