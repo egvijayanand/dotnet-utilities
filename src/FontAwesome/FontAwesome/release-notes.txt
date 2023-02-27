@@ -1,9 +1,19 @@
-What's new in ver. 2.2.1:
+What's new in ver. 2.3.0:
+-------------------------
+Since .NET 8 public preview is available now, the package now targets net8.0 as well.
 
-The package now targets .NET 7 GA release also and since .NET 5 is out of support, it won't be part of the NuGet package any longer.
+Font glyphs compatible with Font Awesome 6 - v6.3.0, latest release as of Feb 2023.
+
+v2.2.1:
+
+The package now targets .NET 7 GA release also.
+
+And since .NET 5 is out of support, it won't be part of the NuGet package any longer.
 
 Font glyphs compatible with Font Awesome 6 - v6.2.1, latest release as of Nov 2022.
 
 For Font Awesome 5 LTS fonts compatible package, checkout the v1 series from:
 
 https://www.nuget.org/packages/VijayAnand.FontAwesome/1.0.7
+
+Join me on Developer Thoughts, https://egvijayanand.in/, an exclusive blog for .NET MAUI and Blazor.

@@ -95,6 +95,8 @@ namespace FontAwesome
             public static readonly string SpaceAwesome = "\ue5ac";
             public static readonly string SquareFontAwesome = "\ue5ad";
             public static readonly string SquareGitlab = "\ue5ae";
+            public static readonly string Odysee = "\ue5c6";
+            public static readonly string Stubber = "\ue5c7";
             public static readonly string SquareTwitter = "\uf081";
             public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
