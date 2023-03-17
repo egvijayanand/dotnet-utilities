@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/vs-2017.3.host",
+    "icon": "ide/icon.png",
+    "symbolInfo": [
+        {
+            "id": "Incremental",
+            "name": {
+                "text": "_Incremental source generator."
+            },
+            "isVisible": true,
+            "defaultValue": "false"
+        }
+    ]
+}
