@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Vijay Anand E G",
+    "defaultName": "SourceGen1",
+    "classifications": [
+        "Automation",
+        "Source Generator",
+        "Incremental"
+    ],
+    "identity": "VijayAnand.SourceGen",
+    "groupIdentity": "VijayAnand.CommonTemplates.SourceGen",
+    "description": "A project template for Source Generator",
+    "name": "Source Generator",
+    "shortName": "sourcegen",
+    "sourceName": "SourceGen.1",
+    "tags": {
+        "language": "C#",
+        "type": "project",
+        "vs_parametersToHide": "no-solution-file"
+    },
+    "guids": [
+        "9A19103F-16F7-4668-BE54-9A1E7A4F7556",
+        "1C560DC6-4D31-42CC-9BFE-520100689835",
+        "A98860A8-7DB8-4672-A24E-CC7C12A7656B"
+    ],
+    "symbols": {
+        "Incremental": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "If true, creates an incremental source generator.",
+            "displayName": "_Incremental source generator"
+        },
+        "no-solution-file": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to skip creating a solution file."
+        },
+        "HostIdentifier": {
+            "type": "bind",
+            "binding": "HostIdentifier"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "Class1.cs"
+        }
+    ],
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(no-solution-file || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "exclude": [
+                        "SourceGen.1.sln"
+                    ]
+                }
+            ]
+        }
+    ]
+}

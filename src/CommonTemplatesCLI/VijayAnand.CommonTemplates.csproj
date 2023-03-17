@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageType>Template</PackageType>
+		<PackageId>VijayAnand.CommonTemplates</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Title>Common Templates</Title>
+		<Authors>Vijay Anand E G</Authors>
+		<Copyright>Copyright &#169; 2023 Vijay Anand E G</Copyright>
+		<Description>Common CLI templates.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<IncludeSymbols>false</IncludeSymbols>
+		<ContentTargetFolders>Content</ContentTargetFolders>
+		<!-- This project has no .NET assemblies, so disable the warning for that -->
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
+		<PackageTags>Source; Generator; Incremental; Automation; Code; Analysis; Optimization</PackageTags>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+		<PackageReadmeFile>overview.md</PackageReadmeFile>
+		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<!-- Source Linking -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="SourceGen\**\*" Exclude="**\bin\**;**\obj\**"/>
+		<Compile Remove="**\*"/>
+		<None Include="overview.md" Pack="true" PackagePath="\"/>
+		<None Include="release-notes.txt"/>
+		<None Include="icon.png" Pack="true" PackagePath=""/>
+	</ItemGroup>
+</Project>

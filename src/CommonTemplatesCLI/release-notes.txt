@@ -1,0 +1,11 @@
+Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
+
+What's new in ver. 1.0.0:
+-------------------------
+Initial release of Common CLI Templates and it covers Source Generator project template.
+
+Usage:
+
+dotnet new sourcegen -n XamlAutomation
+
+dotnet new sourcegen -n XamlAutomation -inc
