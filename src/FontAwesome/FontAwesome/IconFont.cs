@@ -98,6 +98,10 @@ namespace FontAwesome
             public static readonly string Odysee = "\ue5c6";
             public static readonly string Stubber = "\ue5c7";
             public static readonly string Debian = "\ue60b";
+            public static readonly string Threads = "\ue618";
+            public static readonly string SquareThreads = "\ue619";
+            public static readonly string SquareXTwitter = "\ue61a";
+            public static readonly string XTwitter = "\ue61b";
             public static readonly string SquareTwitter = "\uf081";
             public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
