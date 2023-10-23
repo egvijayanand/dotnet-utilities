@@ -1,7 +1,11 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 1.0.0:
+What's new in ver. 1.0.1:
 -------------------------
+Package versions have been made dynamic to pull the latest stable version.
+
+v1.0.0:
+
 Initial release of Common CLI Templates and it covers Source Generator project template.
 
 Usage:
