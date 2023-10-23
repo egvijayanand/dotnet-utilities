@@ -3,9 +3,8 @@
     "author": "Vijay Anand E G",
     "defaultName": "SourceGen1",
     "classifications": [
-        "Automation",
-        "Source Generator",
-        "Incremental"
+        "Roslyn",
+        "Source Generator"
     ],
     "identity": "VijayAnand.SourceGen",
     "groupIdentity": "VijayAnand.CommonTemplates.SourceGen",
