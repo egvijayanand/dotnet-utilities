@@ -1,5 +1,9 @@
-What's new in ver. 2.5.0:
+What's new in ver. 2.5.1:
 -------------------------
+Font glyphs compatible with Font Awesome 6 - v6.5.1, latest release as of Nov 2023.
+
+v2.5.0:
+
 Font glyphs compatible with Font Awesome 6 - v6.5.0, latest release as of Nov 2023.
 
 v2.4.2:
