@@ -102,6 +102,15 @@ namespace FontAwesome
             public static readonly string SquareThreads = "\ue619";
             public static readonly string SquareXTwitter = "\ue61a";
             public static readonly string XTwitter = "\ue61b";
+            public static readonly string Opensuse = "\ue62b";
+            public static readonly string Letterboxd = "\ue62d";
+            public static readonly string SquareLetterboxd = "\ue62e";
+            public static readonly string Mintbit = "\ue62f";
+            public static readonly string GoogleScholar = "\ue63b";
+            public static readonly string Brave = "\ue63c";
+            public static readonly string BraveReverse = "\ue63d";
+            public static readonly string Pixiv = "\ue640";
+            public static readonly string Upwork = "\ue641";
             public static readonly string SquareTwitter = "\uf081";
             public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
