@@ -98,6 +98,7 @@ namespace FontAwesome
             public static readonly string Odysee = "\ue5c6";
             public static readonly string Stubber = "\ue5c7";
             public static readonly string Debian = "\ue60b";
+            public static readonly string Shoelace = "\ue60c";
             public static readonly string Threads = "\ue618";
             public static readonly string SquareThreads = "\ue619";
             public static readonly string SquareXTwitter = "\ue61a";
@@ -111,6 +112,8 @@ namespace FontAwesome
             public static readonly string BraveReverse = "\ue63d";
             public static readonly string Pixiv = "\ue640";
             public static readonly string Upwork = "\ue641";
+            public static readonly string Webflow = "\ue65c";
+            public static readonly string SignalMessenger = "\ue663";
             public static readonly string SquareTwitter = "\uf081";
             public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
