@@ -114,6 +114,12 @@ namespace FontAwesome
             public static readonly string Upwork = "\ue641";
             public static readonly string Webflow = "\ue65c";
             public static readonly string SignalMessenger = "\ue663";
+            public static readonly string Bluesky = "\ue671";
+            public static readonly string Jxl = "\ue67b";
+            public static readonly string SquareUpwork = "\ue67c";
+            public static readonly string WebAwesome = "\ue682";
+            public static readonly string SquareWebAwesome = "\ue683";
+            public static readonly string SquareWebAwesomeStroke = "\ue684";
             public static readonly string SquareTwitter = "\uf081";
             public static readonly string SquareFacebook = "\uf082";
             public static readonly string Linkedin = "\uf08c";
@@ -1156,6 +1162,8 @@ namespace FontAwesome
             public static readonly string PlantWilt = "\ue5aa";
             public static readonly string Stapler = "\ue5af";
             public static readonly string TrainTram = "\ue5b4";
+            public static readonly string TableCellsColumnLock = "\ue678";
+            public static readonly string TableCellsRowLock = "\ue67a";
             public static readonly string MartiniGlassEmpty = "\uf000";
             public static readonly string Music = "\uf001";
             public static readonly string MagnifyingGlass = "\uf002";
