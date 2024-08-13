@@ -113,14 +113,23 @@ static class Program
                 switch (_command)
                 {
                     case ADD:
-                        var properties = xmlDoc.SelectSingleNode("/Solution/Properties");
-                        var addProject = xmlDoc.CreateElement("Project");
-                        var path = xmlDoc.CreateAttribute("Path");
-                        path.Value = _projectPath.XmlEncode();
-                        addProject.Attributes.Append(path);
-                        xmlDoc.DocumentElement.InsertBefore(addProject, properties);
-                        xmlDoc.Save(solution);
-                        WriteInfoMessage($"Project `{_projectPath}` added to the solution.");
+                        var projectNode = xmlDoc.SelectSingleNode($"//Project[@Path='{_projectPath.XmlEncode()}']");
+
+                        if (projectNode is null)
+                        {
+                            var properties = xmlDoc.SelectSingleNode("/Solution/Properties");
+                            var addProject = xmlDoc.CreateElement("Project");
+                            var path = xmlDoc.CreateAttribute("Path");
+                            path.Value = _projectPath.XmlEncode();
+                            addProject.Attributes.Append(path);
+                            xmlDoc.DocumentElement.InsertBefore(addProject, properties);
+                            xmlDoc.Save(solution);
+                            WriteInfoMessage($"Project `{_projectPath}` added to the solution.");
+                        }
+                        else
+                        {
+                            WriteInfoMessage($"Solution {solution} already contains project {_projectPath}.");
+                        }
 
                         break;
                     case LIST:

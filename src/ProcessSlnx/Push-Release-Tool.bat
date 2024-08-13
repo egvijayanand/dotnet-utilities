@@ -23,7 +23,7 @@ if [%packageVersion%]==[] (call Error "Package version # not configured." & goto
 
 :: Existence Check
 
-if not exist .\bin\Release\%packageName%.%packageVersion%.nupkg call Error "NuGet package not available ..." & goto end
+if not exist .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg call Error "NuGet package not available ..." & goto end
 
 :: Modify .NET SDK Version
 
@@ -38,12 +38,12 @@ dotnet --version
 echo.
 call Info "Pushing %packageName% ver. %packageVersion% to MyGet ..."
 
-dotnet nuget push .\bin\Release\%packageName%.%packageVersion%.nupkg --source %nugetSource%\%packageName%
+dotnet nuget push .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg --source %nugetSource%\%packageName%
 
 if not %errorlevel% == 0 (call Error "Template package folder push failed.")
 
 echo.
-nuget add .\bin\Release\%packageName%.%packageVersion%.nupkg -Source %nugetServer%\
+nuget add .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg -Source %nugetServer%\
 
 echo.
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Template package hosted push failed.")

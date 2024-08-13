@@ -45,7 +45,7 @@ echo.
 call Info "Creating %packageName% template ver. %packageVersion% NuGet package in %config% mode ..."
 
 echo.
-dotnet build .\ProcessSlnx.csproj -c %config% -p:PackageVersion=%packageVersion% -p:AssemblyInformationalVersion=%packageVersion%%revisionId%
+dotnet build .\ProcessSlnx\ProcessSlnx.csproj -c %config% -p:PackageVersion=%packageVersion% -p:AssemblyInformationalVersion=%packageVersion%%revisionId%
 
 echo.
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Package creation failed.")

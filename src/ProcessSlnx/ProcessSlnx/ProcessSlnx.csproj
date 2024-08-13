@@ -46,7 +46,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Remove="ProcessSlnx.slnx" />
         <None Include="overview.md" Pack="true" PackagePath="\" />
         <Content Include="release-notes.txt" />
     </ItemGroup>
