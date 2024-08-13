@@ -11,9 +11,9 @@ Supported Commands:
 |Command|Description|
 |:---:|:---|
 |new|Create an empty solution containing no projects.|
-|add|Adda a project to a solution file.|
+|add|Add a project to a solution file.|
 |list|List all projects in a solution file.|
-|remove|Removes a project from a solution file.|
+|remove|Remove a project from a solution file.|
 
 Code Samples:
 

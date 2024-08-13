@@ -1,7 +1,11 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 0.1.0:
+What's new in ver. 0.2.0:
 -------------------------
+Included an existence check to prevent adding a duplicate project entry to the solution.
+
+v0.1.0:
+
 First preview release of the tool.
 
 Install the tool with the below command:
@@ -12,11 +16,11 @@ It supports 4 commands:
 
 new - Create an empty solution containing no projects.
 
-add - Adds a project to a solution file.
+add - Add a project to a solution file.
 
 list - List all projects in a solution file.
 
-remove - Removes a project from a solution file.
+remove - Remove a project from a solution file.
 
 Works with an implicit solution file.
 
