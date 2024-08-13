@@ -29,12 +29,12 @@ static class Program
         }
 
         if (_command == HELP)
-		{
-			WriteHelpMessage();
-			return 0;
-		}
+        {
+            WriteHelpMessage();
+            return 0;
+        }
 
-		string solution;
+        string solution;
         var workingDir = Environment.CurrentDirectory;
 
         if (_command == "new")
@@ -167,142 +167,142 @@ static class Program
         }
 
         return 0;
-	}
+    }
 
-	static ValidationResult ValidateInput(string[] args)
-	{
-		if (args.Length == 0)
-		{
-			return new(false, 1, "Required command was not provided.");
-		}
-		else if (args.Length == 1)
-		{
-			var param1 = args[0].ToLowerInvariant();
+    static ValidationResult ValidateInput(string[] args)
+    {
+        if (args.Length == 0)
+        {
+            return new(false, 1, "Required command was not provided.");
+        }
+        else if (args.Length == 1)
+        {
+            var param1 = args[0].ToLowerInvariant();
 
-			if (param1 == CREATE || param1 == LIST)
-			{
-				_command = param1;
-				return new(true);
-			}
-			else if (param1 == ADD || param1 == REMOVE)
-			{
-				_command = param1;
-				return new(false, 1, $"You must specify at least one project to {_command}.");
-			}
-			else if (param1 == "-h" || param1 == "-?" || param1 == "--help")
-			{
-				_command = HELP;
-				return new(true);
-			}
-			else
-			{
-				return new(false, 1, "Required command was not provided.");
-			}
-		}
-		else if (args.Length == 2)
-		{
-			var param1 = args[0].ToLowerInvariant();
-			var param2 = args[1].ToLowerInvariant();
-			var solnFile = param1.EndsWith(".slnx");
+            if (param1 == CREATE || param1 == LIST)
+            {
+                _command = param1;
+                return new(true);
+            }
+            else if (param1 == ADD || param1 == REMOVE)
+            {
+                _command = param1;
+                return new(false, 1, $"You must specify at least one project to {_command}.");
+            }
+            else if (param1 == "-h" || param1 == "-?" || param1 == "--help")
+            {
+                _command = HELP;
+                return new(true);
+            }
+            else
+            {
+                return new(false, 1, "Required command was not provided.");
+            }
+        }
+        else if (args.Length == 2)
+        {
+            var param1 = args[0].ToLowerInvariant();
+            var param2 = args[1].ToLowerInvariant();
+            var solnFile = param1.EndsWith(".slnx");
 
-			// Validation for default solution file
+            // Validation for default solution file
 
-			if (param1 == CREATE)
-			{
-				_command = param1;
+            if (param1 == CREATE)
+            {
+                _command = param1;
 
-				if (param2 == "--force")
-				{
-					_force = true;
-				}
-				else
-				{
-					_filename = args[1];
-				}
-			}
-			else if (param1 == ADD || param1 == REMOVE)
-			{
-				_command = param1;
-				_projectPath = args[1];
-			}
-			else if (param1 == LIST)
-			{
-				return new(false, 1, $"Unrecognized command or argument '{args[1]}'.");
-			}
-			else if (solnFile)
-			{
-				// Validation for explicit solution file.
-				if (param2 == LIST)
-				{
-					_filename = args[0];
-					_command = param2;
-				}
-				else if (param2 == ADD || param2 == REMOVE)
-				{
-					return new(false, 1, $"You must specify at least one project to {_command}.");
-				}
-				else
-				{
-					return new(false, 1, "Required command was not provided.");
-				}
-			}
-			else
-			{
-				return new(false, 1, "Required command was not provided.");
-			}
-		}
-		else if (args.Length == 3)
-		{
-			var param1 = args[0].ToLowerInvariant();
-			var param2 = args[1].ToLowerInvariant();
-			var param3 = args[2].ToLowerInvariant();
-			var solnFile = param1.EndsWith(".slnx");
+                if (param2 == "--force")
+                {
+                    _force = true;
+                }
+                else
+                {
+                    _filename = args[1];
+                }
+            }
+            else if (param1 == ADD || param1 == REMOVE)
+            {
+                _command = param1;
+                _projectPath = args[1];
+            }
+            else if (param1 == LIST)
+            {
+                return new(false, 1, $"Unrecognized command or argument '{args[1]}'.");
+            }
+            else if (solnFile)
+            {
+                // Validation for explicit solution file.
+                if (param2 == LIST)
+                {
+                    _filename = args[0];
+                    _command = param2;
+                }
+                else if (param2 == ADD || param2 == REMOVE)
+                {
+                    return new(false, 1, $"You must specify at least one project to {_command}.");
+                }
+                else
+                {
+                    return new(false, 1, "Required command was not provided.");
+                }
+            }
+            else
+            {
+                return new(false, 1, "Required command was not provided.");
+            }
+        }
+        else if (args.Length == 3)
+        {
+            var param1 = args[0].ToLowerInvariant();
+            var param2 = args[1].ToLowerInvariant();
+            var param3 = args[2].ToLowerInvariant();
+            var solnFile = param1.EndsWith(".slnx");
 
-			if (param2 == ADD || param2 == REMOVE)
-			{
-				if (solnFile)
-				{
-					_filename = args[0];
-					_command = param2;
-					_projectPath = args[2];
-				}
-				else
-				{
-					return new(false, 1, $"Unrecognized command or argument '{args[0]}'.");
-				}
-			}
-			else
-			{
-				return new(false, 1, "Required command was not provided.");
-			}
-		}
-		else
-		{
-			return new(false, 1, "Required command was not provided.");
-		}
+            if (param2 == ADD || param2 == REMOVE)
+            {
+                if (solnFile)
+                {
+                    _filename = args[0];
+                    _command = param2;
+                    _projectPath = args[2];
+                }
+                else
+                {
+                    return new(false, 1, $"Unrecognized command or argument '{args[0]}'.");
+                }
+            }
+            else
+            {
+                return new(false, 1, "Required command was not provided.");
+            }
+        }
+        else
+        {
+            return new(false, 1, "Required command was not provided.");
+        }
 
-		return new(true);
-	}
+        return new(true);
+    }
 
-	static void WriteHelpMessage()
-	{
-		WriteInfoMessage("Description:");
-		WriteInfoMessage("  .NET modify solution (slnx) file command");
-		WriteLine();
-		WriteInfoMessage("Usage:");
-		WriteInfoMessage("  slnx <SLN_FILE> [command] [options]");
-		WriteLine();
-		WriteInfoMessage("Arguments:");
-		WriteInfoMessage("  <SLN_FILE>  The solution file to operate on. If not specified, the command will search the current directory for one.");
-		WriteLine();
-		WriteInfoMessage("Options:");
-		WriteInfoMessage("  -?, -h, --help  Show command line help.");
-		WriteLine();
-		WriteInfoMessage("Commands:");
-		WriteInfoMessage("  add <PROJECT_PATH>     Add one or more projects to a solution file.");
-		WriteInfoMessage("  list                   List all projects in a solution file.");
-		WriteInfoMessage("  remove <PROJECT_PATH>  Remove one or more projects from a solution file.");
-	}
+    static void WriteHelpMessage()
+    {
+        WriteInfoMessage("Description:");
+        WriteInfoMessage("  .NET modify solution (slnx) file command");
+        WriteLine();
+        WriteInfoMessage("Usage:");
+        WriteInfoMessage("  slnx <SLN_FILE> [command] [options]");
+        WriteLine();
+        WriteInfoMessage("Arguments:");
+        WriteInfoMessage("  <SLN_FILE>  The solution file to operate on. If not specified, the command will search the current directory for one.");
+        WriteLine();
+        WriteInfoMessage("Options:");
+        WriteInfoMessage("  -?, -h, --help  Show command line help.");
+        WriteLine();
+        WriteInfoMessage("Commands:");
+        WriteInfoMessage("  add <PROJECT_PATH>     Add one or more projects to a solution file.");
+        WriteInfoMessage("  list                   List all projects in a solution file.");
+        WriteInfoMessage("  remove <PROJECT_PATH>  Remove one or more projects from a solution file.");
+    }
 
     static void WriteErrorMessage(string message)
     {
