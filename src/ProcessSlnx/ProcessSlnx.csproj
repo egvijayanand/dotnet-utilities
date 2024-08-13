@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+        <OutputType>Exe</OutputType>
+
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>slnx</ToolCommandName>
+
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>ProcessSlnx</RootNamespace>
+
+        <AssemblyName>slnx</AssemblyName>
+        <Version>$(PackageVersion)</Version>
+        <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
+        <FileVersion>$(PackageVersion)</FileVersion>
+
+        <!-- Package Options -->
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageType>DotnetTool</PackageType>
+        <PackageId>VijayAnand.Slnx</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Title>.NET tool to modify solution (slnx) file</Title>
+        <Authors>Vijay Anand E G</Authors>
+        <Owners>Vijay Anand E G</Owners>
+        <Copyright>Copyright &#169; 2024 Vijay Anand E G</Copyright>
+        <Summary>.NET tool to modify solution (slnx) file.</Summary>
+        <Description>.NET tool to modify solution (slnx) file.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <IncludeSymbols>false</IncludeSymbols>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/egvijayanand/dotnet-utilities</RepositoryUrl>
+        <PackageTags>slnx, sln, csproj, vbproj, fsproj</PackageTags>
+        <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\release-notes.txt"))</PackageReleaseNotes>
+        <PackageReadmeFile>overview.md</PackageReadmeFile>
+        <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+        <!--<PackageIcon>icon.png</PackageIcon>-->
+        <!-- Source Linking -->
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <DebugType>portable</DebugType>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="ProcessSlnx.slnx" />
+        <None Include="overview.md" Pack="true" PackagePath="\" />
+        <Content Include="release-notes.txt" />
+    </ItemGroup>
+
+</Project>

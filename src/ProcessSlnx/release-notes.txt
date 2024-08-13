@@ -1,0 +1,39 @@
+Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
+
+What's new in ver. 0.1.0:
+-------------------------
+First preview release of the tool.
+
+Install the tool with the below command:
+
+dotnet tool install -g VijayAnand.Slnx
+
+It supports 4 commands:
+
+new - Create an empty solution containing no projects.
+
+add - Adds a project to a solution file.
+
+list - List all projects in a solution file.
+
+remove - Removes a project from a solution file.
+
+Works with an implicit solution file.
+
+slnx new
+
+slnx add <proj_name>
+
+slnx list
+
+slnx remove <proj_name>
+
+Works with an explicit solution file too.
+
+slnx new <soln_name>
+
+slnx <soln_name> add <proj_name>
+
+slnx <soln_name> list
+
+slnx <soln_name> remove <proj_name>
