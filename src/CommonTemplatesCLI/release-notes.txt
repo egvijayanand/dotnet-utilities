@@ -1,7 +1,25 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 1.0.1:
+What's new in ver. 1.1.0:
 -------------------------
+1. Introduced an option to support the XML-based solution file (slnx) format.
+
+This would be an explicit option since the SLNX feature is currently in the preview stage and is only supported on VS2022.
+
+-slnx | --use-slnx - Default value is false
+
+dotnet new sourcegen -n XamlAutomation -slnx
+
+2. Introduced the option to include a reference to the PolySharp NuGet package.
+
+-ips | --include-polysharp - Default value is false
+
+dotnet new sourcegen -n XamlAutomation -ips
+
+Note: These options may also be combined.
+
+v1.0.1:
+
 Package versions have been made dynamic to pull the latest stable version.
 
 v1.0.0:

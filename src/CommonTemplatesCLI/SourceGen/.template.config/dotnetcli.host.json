@@ -1,13 +1,25 @@
 {
-  "$schema": "http://json.schemastore.org/dotnetcli.host",
-  "symbolInfo": {
-    "Incremental": {
-      "longName": "incremental",
-      "shortName": "inc"
-    }
-  },
-  "usageExamples": [
-    "--incremental",
-    "-inc"
-  ]
+    "$schema": "http://json.schemastore.org/dotnetcli.host",
+    "symbolInfo": {
+        "Incremental": {
+            "longName": "incremental",
+            "shortName": "inc"
+        },
+        "AddPolySharp": {
+            "longName": "include-polysharp",
+            "shortName": "ips"
+        },
+        "UseSlnx": {
+            "longName": "use-slnx",
+            "shortName": "slnx"
+        }
+    },
+    "usageExamples": [
+        "--incremental",
+        "-inc",
+        "--include-polysharp",
+        "-ips",
+        "--use-slnx",
+        "-slnx"
+    ]
 }

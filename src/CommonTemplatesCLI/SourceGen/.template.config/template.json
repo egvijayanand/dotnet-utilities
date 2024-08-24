@@ -14,7 +14,7 @@
     "sourceName": "SourceGen.1",
     "tags": {
         "language": "C#",
-        "type": "project",
+        "type": "solution",
         "vs_parametersToHide": "no-solution-file"
     },
     "guids": [
@@ -23,6 +23,13 @@
         "A98860A8-7DB8-4672-A24E-CC7C12A7656B"
     ],
     "symbols": {
+        "UseSlnx": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to use XML-based solution file (slnx).",
+            "displayName": "Option to use _XML-based solution file (slnx)"
+        },
         "Incremental": {
             "type": "parameter",
             "datatype": "bool",
@@ -30,11 +37,29 @@
             "description": "If true, creates an incremental source generator.",
             "displayName": "_Incremental source generator"
         },
+        "AddPolySharp": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "If true, includes reference to the PolySharp NuGet package.",
+            "displayName": "Add _PolySharp NuGet package reference"
+        },
         "no-solution-file": {
             "type": "parameter",
             "datatype": "bool",
             "defaultValue": "false",
             "description": "Option to skip creating a solution file."
+        },
+        "xmlEncodedName": {
+            "type": "derived",
+            "datatype": "string",
+            "replaces": "SAFE-NAME",
+            "valueSource": "name",
+            "valueTransform": "xmlEncode"
+        },
+        "SolnFile": {
+            "type": "computed",
+            "value": "(!no-solution-file)"
         },
         "HostIdentifier": {
             "type": "bind",
@@ -50,9 +75,31 @@
         {
             "modifiers": [
                 {
-                    "condition": "(no-solution-file || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "condition": "(no-solution-file)",
+                    "exclude": [
+                        "SourceGen.1.sln",
+                        "SourceGen.1.xml"
+                    ]
+                },
+                {
+                    "condition": "(UseSlnx)",
                     "exclude": [
                         "SourceGen.1.sln"
+                    ],
+                    "rename": {
+                        "SourceGen.1.xml": "SourceGen.1.slnx"
+                    }
+                },
+                {
+                    "condition": "(!UseSlnx)",
+                    "exclude": [
+                        "SourceGen.1.xml"
+                    ]
+                },
+                {
+                    "condition": "(AddPolySharp)",
+                    "exclude": [
+                        "IsExternalInit.cs"
                     ]
                 }
             ]
