@@ -3,9 +3,25 @@
     "icon": "ide/icon.png",
     "symbolInfo": [
         {
+            "id": "UseSlnx",
+            "name": {
+                "text": "Use _XML-based solution file (slnx)."
+            },
+            "isVisible": true,
+            "defaultValue": "false"
+        },
+        {
             "id": "Incremental",
             "name": {
                 "text": "_Incremental source generator."
+            },
+            "isVisible": true,
+            "defaultValue": "false"
+        },
+        {
+            "id": "AddPolySharp",
+            "name": {
+                "text": "Add _PolySharp NuGet package reference"
             },
             "isVisible": true,
             "defaultValue": "false"

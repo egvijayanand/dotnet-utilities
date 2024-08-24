@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 
-    <!-- Project Options -->
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>SourceGen._1</RootNamespace>
+        <!-- Project Options -->
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>SourceGen._1</RootNamespace>
 
-    <!-- Packaging Options -->
-    <!-- Generates a package at build -->
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <!-- Do not include the generator assembly as a dependency -->
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-		<!-- This package will not have .NET assemblies, so disable the warning for that -->
-		<NoWarn>$(NoWarn);NU5128</NoWarn>
-  </PropertyGroup>
+        <!-- Packaging Options -->
+        <!-- Generates a package at build -->
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <!-- Do not include the generator assembly as a dependency -->
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <!-- This package will not have .NET assemblies, so disable the warning for that -->
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+        <PackageReadmeFile>overview.md</PackageReadmeFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <!-- Package the generator in the analyzer directory of the NuGet package -->
-    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Include="overview.md" Pack="true" PackagePath="\" />
+        <None Include="release-notes.txt" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="*">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="*" PrivateAssets="all" />
-  </ItemGroup>
+    <ItemGroup>
+        <!-- Package the generator in the analyzer directory of the NuGet package -->
+        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    </ItemGroup>
+    <!--#if (SolnFile && UseSlnx)-->
+
+    <ItemGroup>
+        <None Remove="SAFE-NAME.slnx" />
+    </ItemGroup>
+    <!--#endif-->
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="*">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="*" PrivateAssets="all" />
+        <!--#if (AddPolySharp)-->
+        <PackageReference Include="PolySharp" Version="*">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <!--#endif-->
+    </ItemGroup>
 </Project>
