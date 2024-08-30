@@ -1,6 +1,8 @@
 :: Installs the NuGet package
 @echo off
 
+if [%1]==[] (set config=Release) else (set config=Debug)
+
 if defined MyGetSource (set nugetSource=%MyGetSource%) else (call Error "MyGet folder source path is not defined." & goto end)
 
 if defined MyGetServer (set nugetServer=%MyGetServer%) else (call Error "MyGet hosted source path is not defined." & goto end)
@@ -23,7 +25,7 @@ if [%packageVersion%]==[] (call Error "Package version # not configured." & goto
 
 :: Existence Check
 
-if not exist .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg call Error "NuGet package not available ..." & goto end
+if not exist .\ProcessSlnx\bin\%config%\%packageName%.%packageVersion%.nupkg call Error "NuGet package not available ..." & goto end
 
 :: Modify .NET SDK Version
 
@@ -38,18 +40,18 @@ dotnet --version
 echo.
 call Info "Pushing %packageName% ver. %packageVersion% to MyGet ..."
 
-dotnet nuget push .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg --source %nugetSource%\%packageName%
+dotnet nuget push .\ProcessSlnx\bin\%config%\%packageName%.%packageVersion%.nupkg --source %nugetSource%\%packageName%
 
-if not %errorlevel% == 0 (call Error "Template package folder push failed.")
-
-echo.
-nuget add .\ProcessSlnx\bin\Release\%packageName%.%packageVersion%.nupkg -Source %nugetServer%\
+if not %errorlevel% == 0 (call Error "Tool package folder push failed.")
 
 echo.
-if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Template package hosted push failed.")
+nuget add .\ProcessSlnx\bin\%config%\%packageName%.%packageVersion%.nupkg -Source %nugetServer%\
+
+echo.
+if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Tool package hosted push failed.")
 
 :: Revert the changes
 ::if exist global.json ren global.json global.json.net6.bak
 
 :end
-pause
+if [%2] == [] pause

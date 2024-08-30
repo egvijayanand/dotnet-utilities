@@ -36,13 +36,16 @@ call Info ".NET SDK Version"
 
 dotnet --version
 
+if not exist .\bin\%config%\%packageName%.%packageVersion%.nupkg goto create
+
 echo.
 call Info "Deleting existing package ..."
+del .\bin\%config%\%packageName%.%packageVersion%.nupkg
 
-if exist .\bin\%config%\%packageName%.%packageVersion%.nupkg del .\bin\%config%\%packageName%.%packageVersion%.nupkg
+:create
 
 echo.
-call Info "Creating %packageName% template ver. %packageVersion% NuGet package in %config% mode ..."
+call Info "Creating %packageName% tool ver. %packageVersion% NuGet package in %config% mode ..."
 
 echo.
 dotnet build .\ProcessSlnx\ProcessSlnx.csproj -c %config% -p:PackageVersion=%packageVersion% -p:AssemblyInformationalVersion=%packageVersion%%revisionId%

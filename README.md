@@ -90,14 +90,23 @@ A .NET CLI tool to modify XML-based solution (`slnx`) files.
 dotnet tool install -g VijayAnand.Slnx
 ```
 
+#### What's New
+
+**[v0.3.0](https://www.nuget.org/packages/VijayAnand.Slnx/0.3.0)**
+
+* Ability to add or remove files as solution items.
+* Ability to list files, projects, or both.
+* Proper existence check and project file validations while adding a project to the solution.
+* Ability to configure the deploy option while adding App projects.
+
 #### Supported Commands
 
 |Command|Description|
 |:---:|:---|
 |new|Create an empty solution containing no projects.|
-|add|Add a project to a solution file.|
-|list|List all projects in a solution file.|
-|remove|Remove a project from a solution file.|
+|add|Add a project/file to a solution file.|
+|list|List all projects/files in a solution file.|
+|remove|Remove a project/file from a solution file.|
 
 #### Command Usage
 
@@ -108,7 +117,15 @@ slnx new
 ```
 
 ```shell
-slnx add Test.csproj
+slnx add MyApp.csproj
+```
+
+```shell
+slnx add MyApp.csproj --deploy
+```
+
+```shell
+slnx add file Directory.Packages.props
 ```
 
 ```shell
@@ -116,7 +133,19 @@ slnx list
 ```
 
 ```shell
-slnx remove Test.csproj
+slnx list files
+```
+
+```shell
+slnx list all
+```
+
+```shell
+slnx remove MyApp.csproj
+```
+
+```shell
+slnx remove file Directory.Packages.props
 ```
 
 Works with an explicit solution file too.
@@ -126,7 +155,15 @@ slnx new Test
 ```
 
 ```shell
-slnx Test.slnx add Test.csproj
+slnx Test.slnx add MyApp.csproj
+```
+
+```shell
+slnx Test.slnx add MyApp.csproj --deploy
+```
+
+```shell
+slnx Test.slnx add file Directory.Packages.props
 ```
 
 ```shell
@@ -134,7 +171,19 @@ slnx Test.slnx list
 ```
 
 ```shell
-slnx Test.slnx remove Test.csproj
+slnx Test.slnx list files
+```
+
+```shell
+slnx Test.slnx list all
+```
+
+```shell
+slnx Test.slnx remove MyApp.csproj
+```
+
+```shell
+slnx Test.slnx remove file Directory.Packages.props
 ```
 
 ### VijayAnand.FontAwesome Package
