@@ -1,7 +1,31 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 0.2.0:
+What's new in ver. 0.3.0:
 -------------------------
+1. Ability to add or remove files as solution items.
+
+1.1 Includes an existence check while adding.
+
+slnx add file Directory.Packages.props
+
+slnx remove file Directory.Packages.props
+
+2. Ability to list files, projects, or both.
+
+slnx list - Lists only projects.
+
+slnx list files - Lists only files.
+
+slnx list all - Lists both files and projects.
+
+3. Proper existence check and project file validations while adding a project to the solution.
+
+4. Ability to configure the deploy option while adding App projects.
+
+slnx add MyApp.csproj --deploy
+
+v0.2.0:
+
 Included an existence check to prevent adding a duplicate project entry to the solution.
 
 v0.1.0:

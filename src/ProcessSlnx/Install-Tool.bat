@@ -30,11 +30,12 @@ dotnet --version
 :: Installing the Package
 
 echo.
-call Info "Installing the %packageName% %config% build template ver. %packageVersion% ..."
+call Info "Installing the %packageName% %config% build tool ver. %packageVersion% ..."
 
 echo.
 dotnet tool install --global %packageName% --version %packageVersion%
 
+echo.
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Package install failed.")
 
 :end
